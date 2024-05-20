@@ -1,0 +1,11 @@
+.wrap {
+	background: #1a1c1d;
+	border-radius: 0.5rem;
+	display: grid;
+	grid-template-columns: 0.5fr 1fr;
+	border: 1px solid #94949448;
+	height: calc(100vh - 5rem);
+	@media (max-width: 801px) {
+		grid-template-columns: 1fr;
+	}
+}

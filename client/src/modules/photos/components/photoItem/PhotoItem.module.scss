@@ -1,0 +1,98 @@
+.wrap {
+	position: relative;
+	&:hover {
+		.menu {
+			opacity: 1;
+			pointer-events: all;
+		}
+	}
+}
+
+.photo {
+	max-width: 19.5rem;
+	max-height: 14.7rem;
+	width: 100%;
+	height: 10rem;
+	background: transparent;
+	border-radius: 0.3rem;
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		border-radius: 0.3rem;
+	}
+}
+.wrap__menu {
+	display: flex;
+	flex-direction: column;
+	align-items: end;
+	row-gap: 0.3rem;
+	position: absolute;
+	right: 0.3rem;
+	top: 0.3rem;
+	z-index: 1000;
+	pointer-events: none;
+}
+
+.menu {
+	background: #262a2b;
+	color: #fff;
+	font-size: 1.2rem;
+	border-radius: 50%;
+	padding: 0.2rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: 0.5s;
+	opacity: 0;
+	pointer-events: none;
+}
+
+.menu__group {
+	background: #262a2b;
+	padding: 0.5rem;
+	border-radius: 0.5rem;
+	transition: 0.5s;
+	opacity: 0;
+	pointer-events: none;
+	button,
+	a {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: start;
+		column-gap: 0.5rem;
+		color: #fff;
+		background: transparent;
+		padding: 0.3rem 0.5rem;
+		border-radius: 0.3rem;
+		font-size: 0.9rem;
+		&:hover {
+			background: #5b5e5ffb;
+		}
+		&:active {
+			background: transparent;
+		}
+	}
+}
+
+.open {
+	svg {
+		color: #ff6a00;
+	}
+}
+.set {
+	svg {
+		color: #ff6a00;
+	}
+}
+.delete {
+	svg {
+		color: #f00;
+	}
+}
+
+.active {
+	opacity: 1;
+	pointer-events: all;
+}

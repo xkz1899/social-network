@@ -1,0 +1,9 @@
+.wrap {
+	width: 100%;
+	display: grid;
+	grid-template-columns: 0.5fr 1fr;
+	column-gap: 0.5rem;
+	@media (max-width: 746px) {
+		 grid-template-columns: 1fr;
+	}
+}

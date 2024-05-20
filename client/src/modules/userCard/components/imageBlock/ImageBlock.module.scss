@@ -1,0 +1,104 @@
+.wrap {
+	display: flex;
+	flex-direction: column;
+	row-gap: 0.5rem;
+}
+.image {
+	width: 100%;
+	height: 20rem;
+	background: #1a1c1d;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	row-gap: 1rem;
+	border-radius: 0.5rem;
+	padding: 1rem 0;
+}
+.image__active {
+	padding: 0 1rem;
+	border-radius: 0.5rem;
+}
+
+.avatar {
+	border-radius: 0.5rem;
+	width: 80%;
+	height: 80%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem;
+	font-size: 10rem;
+	background: #8a8782;
+	max-height: 80%;
+	p {
+		font-size: 1rem;
+	}
+	img {
+		width: 100%;
+		height: 100%;
+		max-height: 100%;
+		object-fit: cover;
+		border-radius: 0.5rem;
+	}
+}
+
+.avatar__active {
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	background: transparent;
+}
+
+.edit__image {
+	align-self: center;
+	justify-self: center;
+	border-radius: 0.5rem;
+	width: 80%;
+	color: #fff;
+	background: #282a2b;
+	font-size: 0.9rem;
+	padding: 0.3rem 0.6rem;
+	&:hover {
+		color: rgba(255, 255, 255, 0.4);
+	}
+	&:active {
+		color: #fff;
+	}
+}
+
+.add__friend,
+.message {
+	width: 100%;
+	border-radius: 0.5rem;
+	padding: 0.5rem;
+	color: #fff;
+	background: #1a1c1d;
+	&:hover {
+		background: #70707060;
+	}
+	&:active {
+		background: #1a1c1d;
+	}
+}
+
+.block {
+	width: 100%;
+	border-radius: 0.5rem;
+	padding: 0.5rem;
+	color: #f00;
+	background: #1a1c1d;
+	&:hover {
+		background: #70707060;
+	}
+	&:active {
+		background: #1a1c1d;
+	}
+}
+
+.buttons {
+display: flex;
+flex-direction: column;
+row-gap: 0.5rem;
+}

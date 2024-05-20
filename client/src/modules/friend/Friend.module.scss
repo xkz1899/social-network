@@ -1,0 +1,93 @@
+.wrap {
+	background: #1a1c1d;
+	padding: 1rem;
+	border-radius: 0.5rem;
+}
+
+.title {
+	font-size: 1.5rem;
+	border-bottom: 1px solid #ffffff21;
+	padding-bottom: 0.5rem;
+}
+
+.category {
+	margin-top: 0.5rem;
+	display: flex;
+	button {
+		background: transparent;
+		color: #fff;
+		padding-left: 0.5rem;
+		padding-right: 0.5rem;
+		padding-bottom: 0.5rem;
+		transition: 0.5s;
+		border-bottom: 1px solid transparent;
+	}
+	.active {
+		border-bottom: 1px solid #ff6a00;
+	}
+}
+.redirect {
+	background: transparent;
+	color: #ff6a00;
+	text-align: left;
+	font-size: 1rem;
+	&:hover {
+		color: #ff6a0070;
+	}
+	&:active {
+		color: #ff6a00;
+	}
+}
+.load {
+	width: 100%;
+	padding: 3rem 0;
+	display: flex;
+	justify-content: center;
+}
+
+.friends {
+	display: grid;
+	gap: 0.5rem;
+	margin-top: 0.5rem;
+	grid-template-columns: repeat(5, 1fr);
+	@media (max-width: 1200px) {
+		grid-template-columns: repeat(4, 1fr);
+	}
+
+	@media (max-width: 860px) {
+		grid-template-columns: repeat(3, 1fr);
+	}
+	@media (max-width: 675px) {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	@media (max-width: 500px) {
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
+.empty_active {
+	grid-template-columns: 1fr;
+}
+.empty {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	column-gap: 0.3rem;
+	width: 100%;
+	padding: 1rem 0;
+}
+
+.btn_more {
+	background: transparent;
+	color: #a49c90;
+	border: 1px solid #a49c90;
+	border-radius: 0.5rem;
+	padding: 0.5rem;
+	width: 100%;
+	margin-top: 1rem;
+	&:hover {
+		color: #a49c907a;
+	}
+	&:active {
+		color: #a49c90;
+	}
+}

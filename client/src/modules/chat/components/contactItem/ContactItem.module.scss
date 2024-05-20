@@ -1,0 +1,78 @@
+.item {
+	display: flex;
+	align-items: center;
+	column-gap: 0.2rem;
+	width: 100%;
+	color: #fff;
+	background: transparent;
+	padding: 0.3rem 0.6rem;
+	border-radius: 0.5rem;
+
+	.avatar {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 3rem;
+		width: 3rem;
+		height: 3rem;
+		min-width: 3rem;
+		min-height: 3rem;
+		border-radius: 50%;
+		object-fit: cover;
+		color: #fff;
+		background: #ffffff40;
+		svg {
+			padding: 0.3rem;
+		}
+		img {
+			width: 3rem;
+			height: 3rem;
+			min-width: 3rem;
+			min-height: 3rem;
+			object-fit: cover;
+			border-radius: 50%;
+		}
+	}
+	&:hover {
+		background-color: #2d3031;
+	}
+}
+
+.last_seen {
+	font-size: 0.8rem;
+}
+.active {
+	background: #8774e1;
+	&:hover {
+		background: #8774e1cb;
+	}
+}
+
+.content {
+	width: 100%;
+}
+
+.message {
+	text-align: left;
+	font-size: 0.5rem;
+	color: #ffffff81;
+	padding: 0.5rem;
+}
+
+.top_block {
+	display: flex;
+	justify-content: space-between;
+}
+
+.fullname {
+	font-weight: 700;
+	font-size: 0.7rem;
+	word-break: keep-all;
+	white-space: break-spaces;
+	padding: 0.2rem 0.5rem;
+}
+
+.notification {
+	background: #ff6a00;
+	border-radius: 50%;
+}

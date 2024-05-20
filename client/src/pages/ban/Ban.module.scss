@@ -1,0 +1,15 @@
+.ban {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: #1a1c1d;
+	border-radius: 0.5rem;
+	padding: 3rem;
+	svg {
+		font-size: 3rem;
+	}
+	h1 {
+		font-size: 1.5rem;
+	}
+}

@@ -1,0 +1,36 @@
+.wrap {
+	background: #1a1c1d;
+	padding: 3rem;
+	border-radius: 0.5rem;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	row-gap: 0.5rem;
+	width: 90vw;
+	height: 90vh;
+
+	textarea {
+		background: #2e2e2e;
+		padding: 0.5rem;
+		border-radius: 0.5rem;
+		font-size: 1.2rem;
+		color: #fff;
+    max-width: 100%;
+		&::placeholder {
+			color: #ffffff94;
+		}
+	}
+	button {
+		color: #ff6a00;
+		background: transparent;
+		border: 1px solid #ff6a00;
+		padding: 0.5rem 1rem;
+		border-radius: 0.5rem;
+		&:hover {
+			border: 1px solid #ff6a00a1;
+		}
+		&:active {
+			border: 1px solid #ff6a00;
+		}
+	}
+}

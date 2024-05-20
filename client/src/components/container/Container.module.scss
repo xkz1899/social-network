@@ -1,0 +1,11 @@
+.container {
+	max-width: 1200px;
+	min-height: calc(100% - 3.1rem);
+	height: calc(100% - 3.1rem);
+	margin: 0 auto;
+	padding: 0 15px;
+	box-sizing: content-box;
+	@media (max-width: 1200px) {
+		max-width: 970px;
+	}
+}

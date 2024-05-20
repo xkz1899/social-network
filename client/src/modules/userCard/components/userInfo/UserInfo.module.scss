@@ -1,0 +1,67 @@
+.wrap {
+	background: #1a1c1d;
+	padding: 1rem;
+	border-radius: 0.5rem;
+	display: flex;
+	flex-direction: column;
+}
+
+.status {
+	p {
+		font-size: 0.8rem;
+	}
+	button {
+		color: rgba(255, 255, 255, 0.4);
+		background: transparent;
+		&:hover {
+			color: rgba(255, 255, 255, 0.7);
+		}
+		&:active {
+			color: rgba(255, 255, 255, 0.4);
+		}
+	}
+}
+
+.top {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+	margin-bottom: 1rem;
+	display: flex;
+	flex-direction: column;
+	row-gap: 0.5rem;
+	padding-bottom: 0.5rem;
+}
+
+.info__items {
+	display: flex;
+	flex-direction: column;
+	row-gap: 0.5rem;
+}
+
+.contact {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+	padding-bottom: 0.2rem;
+	font-weight: 600;
+}
+.education {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+	padding-bottom: 0.2rem;
+	font-weight: 600;
+}
+
+.inner{
+	display: flex;
+	flex-direction: column;
+	row-gap: 0.5rem;
+}
+
+.btn__visible {
+	color: #ff6a00;
+	background: transparent;
+	margin-top: 1rem;
+	&:hover {
+		color: #ff6a0096;
+	}
+	&:active {
+		color: #ff6a00;
+	}
+}

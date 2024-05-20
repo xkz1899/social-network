@@ -1,0 +1,111 @@
+.wrap {
+	background: #1a1c1d;
+	border-radius: 0.5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	justify-content: start;
+	row-gap: 0.5rem;
+	padding: 1rem;
+}
+
+.title {
+	font-size: 1.5rem;
+}
+
+.fullname {
+	display: flex;
+	column-gap: 0.5rem;
+	@media (max-width: 560px) {
+		flex-direction: column;
+		row-gap: 0.5rem;
+	}
+}
+
+.main {
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	row-gap: 0.5rem;
+	width: 100%;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+	padding-bottom: 0.5rem;
+}
+
+.name,
+.surname,
+.status,
+.place_work,
+.phone_number,
+.telegram,
+.university,
+.faculty {
+	padding: 0.5rem 1rem;
+	border-radius: 0.5rem;
+	color: #fff;
+	background: transparent;
+	border: 1px solid #ff6a00;
+}
+
+.date {
+	max-width: 100%;
+	padding: 0.5rem 1rem;
+	border-radius: 0.5rem;
+
+	background: transparent;
+	color: #fff;
+	border: 1px solid #ff6a00;
+	&::-webkit-datetime-edit {
+		color: #fff;
+	}
+	&::-webkit-calendar-picker-indicator {
+		background-color: #fff;
+		border-radius: 0.2rem;
+		cursor: pointer;
+		&:hover {
+			background-color: #ff6a00;
+		}
+		&:focus {
+			padding: 0.25rem;
+			border-radius: 0.2rem;
+			background-color: #ff6a00;
+		}
+		&:active {
+			background-color: #fff;
+		}
+	}
+}
+
+.education,
+.contact {
+	width: 100%;
+	h3 {
+		font-size: 1.1rem;
+		padding-bottom: 0.3rem;
+		border-bottom: 1px solid #ffffff66;
+		margin-bottom: 0.5rem;
+		font-weight: 600;
+	}
+}
+.inner {
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	row-gap: 0.5rem;
+}
+
+.save {
+	align-self: center;
+	padding: 0.3rem 0.6rem;
+	border-radius: 0.3rem;
+	background: transparent;
+	color: #ff6a00;
+	border: 1px solid #ff6a00;
+	transition: 0.3s;
+	&:hover {
+		border: 1px solid #ff6a008a;
+	}
+	&:active {
+		border: 1px solid #ff6a00;
+	}
+}

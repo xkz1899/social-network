@@ -1,0 +1,47 @@
+.wrap {
+	background: #1a1c1d;
+	padding: 1rem;
+	border-radius: 0.5rem;
+	display: flex;
+	flex-direction: column;
+	row-gap: 1rem;
+}
+
+.photos {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	column-gap: 0.5rem;
+	@media (max-width: 400px) {
+		 grid-template-columns: repeat(2,1fr);
+		 row-gap: 0.5rem;
+	}
+}
+
+.photo {
+	width: 100%;
+	height: 100%;
+	max-height: 6.5rem;
+	@media (max-width: 746px) {
+		width: 100%;
+	}
+	object-fit: cover;
+	transition: 0.2s;
+	&:hover {
+		transform: scale(1.05);
+	}
+	&:active {
+		transform: scale(1);
+	}
+}
+
+.link {
+	background: transparent;
+	color: #fff;
+	text-align: left;
+	&:hover {
+		color: #ffffff5e;
+	}
+	&:active {
+		color: #fff;
+	}
+}

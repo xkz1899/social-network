@@ -1,0 +1,44 @@
+.header {
+	background: #292929;
+	border-bottom: 1px solid #ffffff21;
+	align-self: start;
+	display: flex;
+	align-items: center;
+	column-gap: 0.5rem;
+	width: 100%;
+	height: 2rem;
+	padding: 1.5rem;
+	border-top-right-radius: 0.5rem;
+}
+.avatar {
+	display: flex;
+	font-size: 1.2rem;
+	background: rgba(255, 255, 255, 0.4);
+	padding: 0.35rem;
+	border-radius: 50%;
+}
+
+.update__time {
+	color: #a49c90;
+	font-size: 0.7rem;
+}
+
+.name {
+	align-self: start;
+	color: #ff6a00;
+	background: transparent;
+	text-align-last: left;
+	border-bottom: 1px solid transparent;
+	&:hover {
+		border-bottom: 1px solid;
+	}
+}
+.avatar__active {
+	padding: 0;
+	img {
+		width: 2.5rem;
+		height: 2.5rem;
+		border-radius: 50%;
+		object-fit: cover;
+	}
+}
