@@ -35,7 +35,7 @@ Both should be installed and make sure postgreSQL is running.
 
 ```shell
 git clone https://github.com/xkz1899/social-network.git
-cd store
+cd social-network
 ```
 
 Install the dependencies.
